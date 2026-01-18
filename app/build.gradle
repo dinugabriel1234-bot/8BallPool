@@ -45,7 +45,4 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite:2.13.0'
     implementation 'org.tensorflow:tensorflow-lite-support:0.4.3'
     implementation 'org.tensorflow:tensorflow-lite-gpu:2.13.0'
-
-    // OpenCV Android (opțional, pentru image processing)
-    implementation 'org.opencv:opencv-android:4.8.0'
 }
