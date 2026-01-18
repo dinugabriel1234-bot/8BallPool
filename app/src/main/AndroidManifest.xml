@@ -1,8 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisiuni necesare -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name="app.hack.eightballpool.App"
@@ -13,18 +16,23 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <activity android:name="app.hack.eightballpool.MainActivity" android:exported="true" tools:ignore="Instantiatable">
+        <!-- Activitatea principală -->
+        <activity
+            android:name="app.hack.eightballpool.MainActivity"
+            android:exported="true"
+            tools:ignore="Instantiatable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
+        <!-- Service pentru overlay -->
         <service
             android:name="app.hack.eightballpool.ViewService"
             android:enabled="true"
             android:exported="false"
+            android:foregroundServiceType="mediaProjection|camera"
             android:visibleToInstantApps="false" />
     </application>
 </manifest>
