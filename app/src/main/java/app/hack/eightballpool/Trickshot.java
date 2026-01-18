@@ -12,8 +12,6 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 
-import myproject.R;
-
 public class Trickshot extends View {
     private Paint line;
     private Paint reflectLine;
