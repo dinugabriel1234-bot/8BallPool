@@ -11,8 +11,6 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 
-import myproject.R;
-
 public class ViewService extends Service {
 
     private WindowManager windowManager;
