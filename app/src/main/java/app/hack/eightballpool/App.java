@@ -4,8 +4,6 @@ import android.app.Application;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 
-import myproject.R;
-
 public class App extends Application {
     public static final String CHANNEL_ID = "Channel";
 
